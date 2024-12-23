@@ -70,7 +70,7 @@ This project simulates a trading platform API with WebSocket status support. The
     - Copy report file:
       ```commandline
       docker cp trading-platform-xm-tests:/tests/reports/report.html ./reports/report.html
-    ```
+      ```
 
 
 5. **Shut Down the Docker Compose and Clean Up images**
