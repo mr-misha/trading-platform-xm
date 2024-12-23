@@ -1,0 +1,29 @@
+version: '3.9'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: trading-platform-xm-api
+    ports:
+      - "8000:8000"
+    command: ["fastapi", "run", "trading_app/trading_api_server.py"]
+    networks:
+      - app_network
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile-tests
+    container_name: trading-platform-xm-tests
+    depends_on:
+      - api
+    entrypoint: >
+      sh -c "while ! curl -sSf http://api:8000/docs > /dev/null; do sleep 1; done;
+             pytest ./tests/ --html=./reports/report.html"
+    networks:
+      - app_network
+
+networks:
+  app_network:

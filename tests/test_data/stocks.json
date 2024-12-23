@@ -1,0 +1,64 @@
+{
+  "stocks": [
+    {
+      "symbol": "AAPL",
+      "name": "Apple Inc.",
+      "quantity": 1,
+      "price": 175.24
+    },
+    {
+      "symbol": "MSFT",
+      "name": "Microsoft Corporation",
+      "quantity": 2,
+      "price": 325.67
+    },
+    {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "quantity": 3,
+      "price": 142.45
+    },
+    {
+      "symbol": "AMZN",
+      "name": "Amazon.com, Inc.",
+      "quantity": 4,
+      "price": 117.34
+    },
+    {
+      "symbol": "TSLA",
+      "name": "Tesla, Inc.",
+      "quantity": 5,
+      "price": 245.78
+    },
+    {
+      "symbol": "FB",
+      "name": "Meta Platforms, Inc.",
+      "quantity": 6,
+      "price": 208.90
+    },
+    {
+      "symbol": "NFLX",
+      "name": "Netflix, Inc.",
+      "quantity": 7,
+      "price": 410.65
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "quantity": 8,
+      "price": 457.89
+    },
+    {
+      "symbol": "BABA",
+      "name": "Alibaba Group Holding Limited",
+      "quantity": 9,
+      "price": 95.10
+    },
+    {
+      "symbol": "INTC",
+      "name": "Intel Corporation",
+      "quantity": 10,
+      "price": 33.12
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest-asyncio = "*"
+httpx = "*"
+websockets = "*"
+fastapi = {extras = ["standard"], version = "*"}
+ipdb = "*"
+pytest-xdist = "3.6.1"
+ruff = "*"
+requests = "*"
+isort = "*"
+pytest-html = "*"
+
+[dev-packages]
+pytest = "8.3.4"
+
+[requires]
+python_version = "3.10"
+python_full_version = "3.10.12"
