@@ -82,11 +82,11 @@ This project simulates a trading platform API with WebSocket status support. The
 Open your browser and navigate to http://localhost:8000/docs to view the automatically generated API documentation provided by Swagger.
 
 
-    Endpoints
-    POST /orders: Create a new order.
-    GET /orders/{order_id}: Get order details by order_id.
-    DELETE /orders/{order_id}: Delete an order by order_id.
-    ws://localhost:8000/ws: WebSocket endpoint for real-time status updates.
+    Endpoints:
+    - POST /orders: Create a new order.
+    - GET /orders/{order_id}: Get order details by order_id.
+    - DELETE /orders/{order_id}: Delete an order by order_id.
+    - ws://localhost:8000/ws/orders: WebSocket endpoint for real-time status updates.
 
 7. **Making API Requests**
 Use tools like curl, Postman, or directly through the Swagger UI.
@@ -103,7 +103,7 @@ Example curl Commands
     curl -X GET "http://localhost:8000/orders/{order_id}"
     ````
 
-- Get an all Orders:
+- Get all Orders:
     ````
     curl -X GET "http://localhost:8000/orders"
     ````
